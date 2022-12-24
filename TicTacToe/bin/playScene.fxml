@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="playSceneController">
+   <children>
+      <Button layoutX="191.0" layoutY="14.0" mnemonicParsing="false" onAction="#previous" onTouchPressed="#previous" prefHeight="25.0" prefWidth="79.0" text="Previous">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="220.0" layoutX="214.0" layoutY="126.0" startX="-100.0" startY="52.0" stroke="#2f2f2f" />
+      <Line endX="-100.0" endY="219.0" layoutX="279.0" layoutY="126.0" startX="-100.0" startY="52.0" stroke="#2f2f2f" />
+      <Line endX="90.0" layoutX="142.0" layoutY="230.0" startX="-92.0" stroke="#2f2f2f" />
+      <Line endX="89.0" layoutX="142.0" layoutY="297.0" startX="-89.0" stroke="#2f2f2f" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c1c3" height="189.0" layoutX="44.0" layoutY="166.0" opacity="0.14" stroke="BLACK" strokeType="INSIDE" width="195.0" />
+      <Label id="00" fx:id="zeroZero" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="167.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="01" fx:id="zeroOne" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="167.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="02" fx:id="zeroTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="167.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="10" fx:id="oneZero" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="233.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="11" fx:id="oneOne" alignment="CENTER" contentDisplay="CENTER" layoutX="119.0" layoutY="233.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="12" fx:id="oneTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="233.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="20" fx:id="twoZero" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="297.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="21" fx:id="twoOne" alignment="CENTER" contentDisplay="CENTER" layoutX="115.0" layoutY="297.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label id="22" fx:id="twoTwo" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="297.0" onMouseClicked="#enter" onTouchPressed="#enter" prefHeight="59.0" prefWidth="61.0">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#restart" onTouchPressed="#restart" prefHeight="30.0" prefWidth="79.0" text="Restart">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="84.0" prefHeight="49.0" prefWidth="47.0" text="X">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="218.0" layoutY="84.0" prefHeight="49.0" prefWidth="47.0" text="O">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="22.0" layoutY="79.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="61.0" fx:id="xSquare" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="59.0" layoutX="211.0" layoutY="79.0" opacity="0.51" stroke="BLACK" strokeType="INSIDE" width="61.0" fx:id="xCircle" />
+      <Label fx:id="winDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="29.0" layoutY="360.0" prefHeight="38.0" prefWidth="228.0">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
